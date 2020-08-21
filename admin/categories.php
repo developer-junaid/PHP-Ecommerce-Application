@@ -18,9 +18,16 @@
         }
 
 
-        $update_status = "update categories set status='$status' where id='$id' ";
-        mysqli_query($con, $update_status);
+        $update_status_sql = "update categories set status='$status' where id='$id' ";
+        mysqli_query($con, $update_status_sql);
        }
+
+       // If Delete is provided
+       if ($type == 'delete'){
+         $id = get_safe_value($con, $_GET['id']);
+         $delete_sql = "delete from categories where id='$id' ";
+         mysqli_query($con, $delete_sql);
+        }
    }
    
    // FETCH Categories Data from Database
@@ -37,6 +44,7 @@
                      <div class="card">
                         <div class="card-body">
                            <h4 class="box-title">Categories </h4>
+                           <h4 class="box-title" style='font-size:15px;'> <a style='color: black; text-decoration: underline;' href="manage_categories.php">Add Categories</a>  </h4>
                         </div>
                         <div class="card-body--">
                            <div class="table-stats order-table ov-h">
@@ -46,7 +54,7 @@
                                        <th class="serial">#</th>
                                        <th>ID</th>
                                        <th>Categories</th>
-                                       <th>Status</th>
+                                       <th></th>
                                     </tr>
                                  </thead>
                                  <tbody>
@@ -59,10 +67,13 @@
                                             <td><?php echo $row['categories'] ?></td>
                                             <td><?php 
                                             if ($row['status'] == 1){
-                                                echo "<a href='?type=status&operation=deactive&id=".$row['id']."'>Active</a>";
+                                                echo "<span class='badge badge-complete'> <a style='color: white;' href='?type=status&operation=deactive&id=".$row['id']."'>Active</a></span>&nbsp;";
                                             }else{
-                                                echo "<a href='?type=status&operation=active&id=".$row['id']."'>Deactive</a>";
+                                                echo "<span class='badge badge-pending'> <a style='color: white;' href='?type=status&operation=active&id=".$row['id']."'>Deactive</a></span>&nbsp;";
                                             }
+                                            echo "<span class='badge badge-edit'> <a style='color: white;' href='manage_categories.php?id=".$row['id']."'>Edit</a></span>&nbsp;";
+                                            echo "<span class='badge badge-delete'> <a style='color: white;' href='?type=delete&id=".$row['id']."'>Delete</a></span>";
+
                                         ?></td>
                                         </tr>
                                     <?php 
