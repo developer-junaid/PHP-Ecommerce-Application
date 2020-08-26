@@ -38,7 +38,7 @@
                      <a href="categories.php" > Categories Master</a>
                   </li>
                   <li class="menu-item-has-children dropdown">
-                     <a href='#' > Product Master</a>
+                     <a href='product.php' > Product Master</a>
                   </li>
                   <li class="menu-item-has-children dropdown">
                      <a href="#" > Order Master</a>
@@ -47,7 +47,7 @@
                      <a href="#" > User Master</a>
                   </li>
                   <li class="menu-item-has-children dropdown">
-                     <a href="#" > Contact Us</a>
+                     <a href="contact_us.php" > Contact Us</a>
                   </li>
                </ul>
             </div>
