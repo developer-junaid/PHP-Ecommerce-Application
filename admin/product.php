@@ -67,7 +67,13 @@
                                         <tr>
                                             <td class="serial"><?php echo $i ?></td>
                                             <td><?php echo $row['id'] ?></td>
-                                            <td><?php echo $row['image'] ?></td>
+                                            <td class="avatar pb-0"> 
+                                             <div class="round-img">
+                                                <a href="<?php echo PRODUCT_IMAGE_SITE_PATH.$row['image'] ?>" target='_blank'>
+                                                   <img class="rounded-circle" src="<?php echo PRODUCT_IMAGE_SITE_PATH.$row['image'] ?>" alt="" /> 
+                                                </a>
+                                             </div>
+                                            </td>
                                             <td><?php echo $row['name'] ?></td>
                                             <td><?php echo $row['price'] ?></td>
                                             <td> <span class='count'><?php echo $row['qty'] ?> </span></td>

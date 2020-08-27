@@ -44,7 +44,7 @@
                      <a href="#" > Order Master</a>
                   </li>
 				      <li class="menu-item-has-children dropdown">
-                     <a href="#" > User Master</a>
+                     <a href="users.php" > User Master</a>
                   </li>
                   <li class="menu-item-has-children dropdown">
                      <a href="contact_us.php" > Contact Us</a>
