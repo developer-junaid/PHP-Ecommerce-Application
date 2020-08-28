@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Contact || Asbab - eCommerce HTML5 Template</title>
+    <title>Cart || Asbab - eCommerce HTML5 Template</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -285,7 +285,7 @@
                                 <nav class="bradcaump-inner">
                                   <a class="breadcrumb-item" href="index.html">Home</a>
                                   <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i></span>
-                                  <span class="breadcrumb-item active">Login</span>
+                                  <span class="breadcrumb-item active">shopping cart</span>
                                 </nav>
                             </div>
                         </div>
@@ -294,88 +294,99 @@
             </div>
         </div>
         <!-- End Bradcaump area -->
-        <!-- Start Contact Area -->
-        <section class="htc__contact__area ptb--100 bg__white">
+        <!-- cart-main-area start -->
+        <div class="cart-main-area ptb--100 bg__white">
             <div class="container">
                 <div class="row">
-					<div class="col-md-6">
-						<div class="contact-form-wrap mt--60">
-							<div class="col-xs-12">
-								<div class="contact-title">
-									<h2 class="title__line--6">Login</h2>
-								</div>
-							</div>
-							<div class="col-xs-12">
-								<form id="contact-form" action="#" method="post">
-									<div class="single-contact-form">
-										<div class="contact-box name">
-											<input type="text" name="name" placeholder="Your Email*" style="width:100%">
-										</div>
-									</div>
-									<div class="single-contact-form">
-										<div class="contact-box name">
-											<input type="text" name="name" placeholder="Your Password*" style="width:100%">
-										</div>
-									</div>
-									
-									<div class="contact-btn">
-										<button type="submit" class="fv-btn">Login</button>
-									</div>
-								</form>
-								<div class="form-output">
-									<p class="form-messege"></p>
-								</div>
-							</div>
-						</div> 
-                
-				</div>
-				
-
-					<div class="col-md-6">
-						<div class="contact-form-wrap mt--60">
-							<div class="col-xs-12">
-								<div class="contact-title">
-									<h2 class="title__line--6">Register</h2>
-								</div>
-							</div>
-							<div class="col-xs-12">
-								<form id="contact-form" action="#" method="post">
-									<div class="single-contact-form">
-										<div class="contact-box name">
-											<input type="text" name="name" placeholder="Your Name*" style="width:100%">
-										</div>
-									</div>
-									<div class="single-contact-form">
-										<div class="contact-box name">
-											<input type="text" name="name" placeholder="Your Email*" style="width:100%">
-										</div>
-									</div>
-									<div class="single-contact-form">
-										<div class="contact-box name">
-											<input type="text" name="name" placeholder="Your Mobile*" style="width:100%">
-										</div>
-									</div>
-									<div class="single-contact-form">
-										<div class="contact-box name">
-											<input type="text" name="name" placeholder="Your Password*" style="width:100%">
-										</div>
-									</div>
-									
-									<div class="contact-btn">
-										<button type="submit" class="fv-btn">Register</button>
-									</div>
-								</form>
-								<div class="form-output">
-									<p class="form-messege"></p>
-								</div>
-							</div>
-						</div> 
-                
-				</div>
-					
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <form action="#">               
+                            <div class="table-content table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="product-thumbnail">products</th>
+                                            <th class="product-name">name of products</th>
+                                            <th class="product-price">Price</th>
+                                            <th class="product-quantity">Quantity</th>
+                                            <th class="product-subtotal">Total</th>
+                                            <th class="product-remove">Remove</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="product-thumbnail"><a href="#"><img src="images/product-2/cart-img/1.jpg" alt="product img" /></a></td>
+                                            <td class="product-name"><a href="#">New Dress For Sunday</a>
+                                                <ul  class="pro__prize">
+                                                    <li class="old__prize">$82.5</li>
+                                                    <li>$75.2</li>
+                                                </ul>
+                                            </td>
+                                            <td class="product-price"><span class="amount">£165.00</span></td>
+                                            <td class="product-quantity"><input type="number" value="1" /></td>
+                                            <td class="product-subtotal">£165.00</td>
+                                            <td class="product-remove"><a href="#"><i class="icon-trash icons"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="product-thumbnail"><a href="#"><img src="images/product-2/cart-img/2.jpg" alt="product img" /></a></td>
+                                            <td class="product-name"><a href="#">New Dress For Sunday</a>
+                                                <ul  class="pro__prize">
+                                                    <li class="old__prize">$82.5</li>
+                                                    <li>$75.2</li>
+                                                </ul>
+                                            </td>
+                                            <td class="product-price"><span class="amount">£50.00</span></td>
+                                            <td class="product-quantity"><input type="number" value="1" /></td>
+                                            <td class="product-subtotal">£50.00</td>
+                                            <td class="product-remove"><a href="#"><i class="icon-trash icons"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="product-thumbnail"><a href="#"><img src="images/product-2/cart-img/3.jpg" alt="product img" /></a></td>
+                                            <td class="product-name"><a href="#">New Dress For Sunday</a>
+                                                <ul  class="pro__prize">
+                                                    <li class="old__prize">$82.5</li>
+                                                    <li>$75.2</li>
+                                                </ul>
+                                            </td>
+                                            <td class="product-price"><span class="amount">£50.00</span></td>
+                                            <td class="product-quantity"><input type="number" value="1" /></td>
+                                            <td class="product-subtotal">£50.00</td>
+                                            <td class="product-remove"><a href="#"><i class="icon-trash icons"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="product-thumbnail"><a href="#"><img src="images/product-2/cart-img/4.jpg" alt="product img" /></a></td>
+                                            <td class="product-name"><a href="#">New Dress For Sunday</a>
+                                                <ul  class="pro__prize">
+                                                    <li class="old__prize">$82.5</li>
+                                                    <li>$75.2</li>
+                                                </ul>
+                                            </td>
+                                            <td class="product-price"><span class="amount">£50.00</span></td>
+                                            <td class="product-quantity"><input type="number" value="1" /></td>
+                                            <td class="product-subtotal">£50.00</td>
+                                            <td class="product-remove"><a href="#"><i class="icon-trash icons"></i></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="buttons-cart--inner">
+                                        <div class="buttons-cart">
+                                            <a href="#">Continue Shopping</a>
+                                        </div>
+                                        <div class="buttons-cart checkout--btn">
+                                            <a href="#">update</a>
+                                            <a href="#">checkout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form> 
+                    </div>
+                </div>
             </div>
-        </section>
-        <!-- End Contact Area -->
+        </div>
+        <!-- cart-main-area end -->
         <!-- End Banner Area -->
         <!-- Start Footer Area -->
         <footer id="htc__footer">
@@ -503,9 +514,6 @@
     <script src="js/plugins.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/ajax-mail.js"></script>
-
-    
     <!-- Waypoints.min.js. -->
     <script src="js/waypoints.min.js"></script>
     <!-- Main js file that contents all jQuery plugins activation. -->
