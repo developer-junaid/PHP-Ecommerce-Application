@@ -20,6 +20,7 @@ Primary style
 }
 @media only screen and (min-width: 1170px) {
   .cd-title {
+    height: 200px;
     line-height: 300px;
   }
   .cd-title h1 {
