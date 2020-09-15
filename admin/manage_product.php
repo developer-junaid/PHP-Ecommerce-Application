@@ -13,7 +13,7 @@ if (isset($_GET['id']) && $_GET['id']!='' ){
       $check = mysqli_num_rows($result);
       if ($check > 0){
          $row = mysqli_fetch_assoc($result);
-         $categories = $row['categories'];
+         // $categories = $row['categories'];
       }else{
          header('location:product.php'); // Redirect 
          die();
@@ -21,7 +21,7 @@ if (isset($_GET['id']) && $_GET['id']!='' ){
  }
 
 
-if (isset($_POST['submitbtn'])){
+if (isset($_POST['submit'])){
    $categories_id = get_safe_value($con, $_POST['categories_id']);
    $name = get_safe_value($con, $_POST['name']);
    $price = get_safe_value($con, $_POST['price']);
@@ -102,7 +102,7 @@ if (isset($_POST['submitbtn'])){
                               </div>
 
 
-                              <button id="payment-button" type="submit" name='submitbtn' class="btn btn-lg btn-info btn-block">
+                              <button id="payment-button" type="submit" name='submit' class="btn btn-lg btn-info btn-block">
                                  <span id="payment-button-amount">Add</span>
                               </button>
                               <div style='color:red'><?php echo $msg ?></div>

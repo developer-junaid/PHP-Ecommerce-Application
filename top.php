@@ -1,57 +1,122 @@
+<?php 
+   require('connection.inc.php');
+   require('functions.inc.php');
+
+   // Get categories
+   $cat_res = mysqli_query($con, 'select * from categories where status=1 order by categories asc');
+   $cat_arr = array();
+   while($row=mysqli_fetch_assoc($cat_res)){
+      $cat_arr[]=$row;
+   }
+
+
+?>
+
 <!doctype html>
-<html class="no-js" lang="">
-   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Dashboard Page</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="assets/css/normalize.css">
-      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-      <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-      <link rel="stylesheet" href="assets/css/themify-icons.css">
-      <link rel="stylesheet" href="assets/css/pe-icon-7-filled.css">
-      <link rel="stylesheet" href="assets/css/flag-icon.min.css">
-      <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
-      <link rel="stylesheet" href="assets/css/style.css">
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
-   </head>
-   <body>
-      <aside id="left-panel" class="left-panel">
-         <nav class="navbar navbar-expand-sm navbar-default">
-            <div id="main-menu" class="main-menu collapse navbar-collapse">
-               <ul class="nav navbar-nav">
-                  <li class="menu-title">Menu</li>
-                  <li class="menu-item-has-children dropdown">
-                     <a href="#" > Department Master</a>
-                  </li>
-                  <li class="menu-item-has-children dropdown">
-                     <a href="#" > Leave Type Master</a>
-                  </li>
-				  <li class="menu-item-has-children dropdown">
-                     <a href="#" > Employee Master</a>
-                  </li>
-               </ul>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Asbab - eCommerce HTML5 Templatee</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+
+    <!-- All css files are included here. -->
+    <!-- Bootstrap fremwork main css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Owl Carousel min css -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- This core.css file contents all plugings css file. -->
+    <link rel="stylesheet" href="css/core.css">
+    <!-- Theme shortcodes/elements style -->
+    <link rel="stylesheet" href="css/shortcode/shortcodes.css">
+    <!-- Theme main style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- User style -->
+    <link rel="stylesheet" href="css/custom.css">
+
+
+    <!-- Modernizr JS -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->  
+
+    <!-- Body main wrapper start -->
+    <div class="wrapper">
+        <!-- Start Header Style -->
+        <header id="htc__header" class="htc__header__area header--one">
+            <!-- Start Mainmenu Area -->
+            <div id="sticky-header-with-topbar" class="mainmenu__wrap sticky__header">
+                <div class="container">
+                    <div class="row">
+                        <div class="menumenu__container clearfix">
+                            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5"> 
+                                <div class="logo">
+                                     <a href="index.php"><img src="images/logo/4.png" alt="logo images"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-7 col-lg-8 col-sm-5 col-xs-3">
+                                <nav class="main__menu__nav hidden-xs hidden-sm">
+                                    <ul class="main__menu">
+                                        <li class="drop"><a href="index.php">Home</a></li>
+                                       
+                                       <?php
+                                          foreach($cat_arr as $list){
+                                             ?>
+                              <li><a href="categories.php?id=<?php echo $list['id']?>"><?php echo $list['categories']?></a></li>
+                                             <?php
+                                          }
+                                       ?>
+                                       
+                                       <li><a href="contact.php">contact</a></li>
+                                    </ul>
+                                </nav>
+
+                                <div class="mobile-menu clearfix visible-xs visible-sm">
+                                    <nav id="mobile_dropdown">
+                                        <ul>
+                                            <li><a href="index.php">Home</a></li>
+                                            <?php
+                                          foreach($cat_arr as $list){
+                                             ?>
+                              <li><a href="categories.php?id=<?php echo $list['id']?>"><?php echo $list['categories']?></a></li>
+                                             <?php
+                                          }
+                                       ?>
+                                            <li><a href="contact.php">contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>  
+                            </div>
+                            <div class="col-md-3 col-lg-2 col-sm-4 col-xs-4">
+                                <div class="header__right">
+                                  
+                                    <div class="header__account">
+                                        <a href="login.php">Login/Register</a>
+                                    </div>
+                                    <div class="htc__shopping__cart">
+                                        <a class="cart__menu" href="#"><i class="icon-handbag icons"></i></a>
+                                        <a href="#"><span class="htc__qua">0</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-menu-area"></div>
+                </div>
             </div>
-         </nav>
-      </aside>
-      <div id="right-panel" class="right-panel">
-         <header id="header" class="header">
-            <div class="top-left">
-               <div class="navbar-header">
-                  <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Logo"></a>
-                  <a class="navbar-brand hidden" href="index.html"><img src="images/logo2.png" alt="Logo"></a>
-                  <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
-               </div>
-            </div>
-            <div class="top-right">
-               <div class="header-menu">
-                  <div class="user-area dropdown float-right">
-                     <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Welcome Admin</a>
-                     <div class="user-menu dropdown-menu">
-                        <a class="nav-link" href="#"><i class="fa fa-power-off"></i>Logout</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </header>
+            <!-- End Mainmenu Area -->
+        </header>
+        <!-- End Header Area -->

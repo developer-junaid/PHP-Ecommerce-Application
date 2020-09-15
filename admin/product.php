@@ -81,7 +81,7 @@
                                             }else{
                                                 echo "<span class='badge badge-pending'> <a style='color: white;' href='?type=status&operation=active&id=".$row['id']."'>Deactive</a></span>&nbsp;";
                                             }
-                                            echo "<span class='badge badge-edit'> <a style='color: white;' href='manage_categories.php?id=".$row['id']."'>Edit</a></span>&nbsp;";
+                                            echo "<span class='badge badge-edit'> <a style='color: white;' href='manage_product.php?id=".$row['id']."'>Edit</a></span>&nbsp;";
                                             echo "<span class='badge badge-delete'> <a style='color: white;' href='?type=delete&id=".$row['id']."'>Delete</a></span>";
 
                                         ?></td>
