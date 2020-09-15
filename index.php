@@ -15,7 +15,7 @@
                                         <h2>collection 2020</h2>
                                         <h1>Nice CHAIR</h1>
                                         <div class="cr__btn">
-                                            <a href="cart.html">Shop Now</a>
+                                            <a href="cart.php">Shop Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -39,7 +39,7 @@
                                         <h2>collection 2020</h2>
                                         <h1>NICE CHAIR</h1>
                                         <div class="cr__btn">
-                                            <a href="cart.html">Shop Now</a>
+                                            <a href="cart.php">Shop Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -121,19 +121,10 @@
                                         <img src="temp/4.jpg" alt="product images">
                                     </a>
                                 </div>
-                                <div class="fr__hover__info">
-                                    <ul class="product__action">
-                                        <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
-
-                                        <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
-
-                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
-                                    </ul>
-                                </div>
+                              
                                 <div class="fr__product__inner">
                                     <h4><a href="product-details.html">Product 5</a></h4>
                                     <ul class="fr__pro__prize">
-                                        <li class="old__prize">$30.3</li>
                                         <li>$25.9</li>
                                     </ul>
                                 </div>
@@ -148,19 +139,10 @@
                                         <img src="temp/5.jpg"" alt="product images">
                                     </a>
                                 </div>
-                                <div class="fr__hover__info">
-                                    <ul class="product__action">
-                                        <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
-
-                                        <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
-
-                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
-                                    </ul>
-                                </div>
+                              
                                 <div class="fr__product__inner">
                                     <h4><a href="product-details.html">Product 6</a></h4>
                                     <ul class="fr__pro__prize">
-                                        <li class="old__prize">$30.3</li>
                                         <li>$25.9</li>
                                     </ul>
                                 </div>
@@ -175,20 +157,11 @@
                                         <img src="temp/9.jpg"" alt="product images">
                                     </a>
                                 </div>
-                                <div class="fr__hover__info">
-                                    <ul class="product__action">
-                                        <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
-
-                                        <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
-
-                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
-                                    </ul>
-                                </div>
+                             
                                 <div class="fr__product__inner">
                                     <h4><a href="product-details.html">Product 7</a></h4>
                                     <ul class="fr__pro__prize">
-                                        <li class="old__prize">$30.3</li>
-                                        <li>$25.9</li>
+                                        <li>$25</li>
                                     </ul>
                                 </div>
                             </div>
@@ -202,19 +175,10 @@
                                         <img src="temp/8.jpg"" alt="product images">
                                     </a>
                                 </div>
-                                <div class="fr__hover__info">
-                                    <ul class="product__action">
-                                        <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
-
-                                        <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
-
-                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
-                                    </ul>
-                                </div>
+                             
                                 <div class="fr__product__inner">
                                     <h4><a href="product-details.html">Product 8 </a></h4>
                                     <ul class="fr__pro__prize">
-                                        <li class="old__prize">$30.3</li>
                                         <li>$25.9</li>
                                     </ul>
                                 </div>
