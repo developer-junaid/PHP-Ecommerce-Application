@@ -2,7 +2,16 @@
 
 require('top.php');
 $cat_id = mysqli_real_escape_string($con, $_GET['id']);
-$get_product = get_product($con,  '', $cat_id);
+if($cat_id > 0){
+    $get_product = get_product($con,  '', $cat_id);
+
+}else{
+    ?>
+    <script>
+        window.location.href='index.php';
+    </script>
+    <?php
+}
                                           
 ?>
 
