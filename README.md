@@ -7,6 +7,12 @@
 ## Features Added till now
 
 - Admin Panel
+- Frontend
+- Categories
+- Products
+- Contact Us
+- User Management
+- Login Registration
 - View Products
 - Form Validation
 - Accessibility Optimized
@@ -20,7 +26,6 @@
 
 - HTML5
 - CSS3
-- Javascrip
+- Javascript
 - PHP
 - Database "mySQL"
-- Bootstrap 4
