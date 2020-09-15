@@ -1,9 +1,16 @@
 # Ecommerce Store Website
 
-## Currently work in progress .....
 ### *Ecommerce Store Website, with Admin Panel and User Registration System using PHP and mySQL.*
 
+### Home
+<img src='projectImages/home.png' />
+<img src='projectImages/home 3.png' />
 
+### Admin Panel
+<img src='projectImages/products.png' />
+
+
+## Work in progress .....
 ## Features Added till now
 
 - Admin Panel
