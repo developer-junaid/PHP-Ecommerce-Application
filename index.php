@@ -12,8 +12,8 @@
                             <div class="col-md-7 col-sm-7 col-xs-12 col-lg-6">
                                 <div class="slide">
                                     <div class="slider__inner">
-                                        <h2>collection 2018</h2>
-                                        <h1>NICE CHAIR</h1>
+                                        <h2>collection 2020</h2>
+                                        <h1>Nice CHAIR</h1>
                                         <div class="cr__btn">
                                             <a href="cart.html">Shop Now</a>
                                         </div>
@@ -36,7 +36,7 @@
                             <div class="col-md-7 col-sm-7 col-xs-12 col-lg-6">
                                 <div class="slide">
                                     <div class="slider__inner">
-                                        <h2>collection 2018</h2>
+                                        <h2>collection 2020</h2>
                                         <h1>NICE CHAIR</h1>
                                         <div class="cr__btn">
                                             <a href="cart.html">Shop Now</a>
